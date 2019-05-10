@@ -1,0 +1,42 @@
+/*
+
+#vertical{
+    display: none;
+}
+#contenedor {
+    position: relative;
+    margin: 5vh auto;
+    width: 900px;
+    height: 480px;
+    background: whitesmoke;
+}
+
+#contenedor button{
+    display: block;
+    position: relative;
+    margin: 5px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media all and (orientation: portrait){
+    
+    #contenedor{
+        display: none;
+    }
+    
+    #vertical{
+        display: block;
+        position: fixed;
+        width: 20px;;
+        height: 100vh;
+        z-index: 1;
+        background: url(../IMG/prueba.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.tablaEstadisticas {
+    width: 200px;
+}*/
