@@ -5,19 +5,14 @@
 --%>
 <style>
     .color1{
-	background-color: rgb(190,210,65);
-	color: white;
-	border-color: white;
 	
     }
     .color2{
-	background-color: rgb(30,170,200);
-	color: white;
+	
 	
     }
     .color3{
-	background-color: rgb(250,180,50);
-	color: white;
+	
 	
     }
 </style>
@@ -90,11 +85,14 @@
         <div class="col-12" >
             <br>
         </div>
-        <div class="col-6" >
+        <div class="col-4" >
             <a style="width: 100%" class="button color3" onClick="cambiarTeclado(3)">Ocultar</a>
         </div>
-        <div class="col-6" >
+        <div class="col-4" >
             <a style="width: 100%" class="button color3" onClick='cambiarTeclado(2)'>øß∂</a>
+        </div>
+        <div class="col-4" >
+            <a style="width: 100%" class="button color3" onClick='cambiarTeclado(5)'>123</a>
         </div>
     </div>
 </div>
@@ -173,11 +171,86 @@
             <div class="col-12" >
                 <br>
             </div>
-            <div class="col-6" >
+            <div class="col-4" >
                 <a style="width: 100%" class="button color3" onClick="cambiarTeclado(3);">Ocultar</a>
             </div>
-            <div class="col-6" >
-                <a style="width: 100%" class="button color3" onClick='cambiarTeclado(1)'>123</a>
+            <div class="col-4" >
+                <a style="width: 100%" class="button color3" onClick='cambiarTeclado(1)'>{x}</a>
+            </div>
+            <div class="col-4" >
+                <a style="width: 100%" class="button color3" onClick='cambiarTeclado(5)'>123</a>
+            </div>
+        </div>   
+    </div>
+</div>
+<div id="tecladoNumerico" class="row" style="display: none; position: fixed;bottom: 0px; z-index: 1;background-color: rgb(250,250,250); font-family: none">
+    <div class="row" style="">
+        <div class="col-12 row">
+            <div class="col-2 col-4-small">
+                <a style="width: 100%" class="button color1" onClick='input("0")'>0</a>
+            </div>
+            <div class="col-2 col-4-small">
+                <a style="width: 100%" class="button color2" onClick='input("1")'>1</a>
+            </div>
+            <div class="col-2 col-4-small">
+                <a style="width: 100%" class="button color1" onClick='input("2")'>2</a>
+            </div>
+            <div class="col-2 col-4-small">
+                <a style="width: 100%" class="button color2" onClick='input("3")'>3</a>
+            </div>
+            <div class="col-2 col-4-small">
+                <a style="width: 100%" class="button color1" onClick='input("4")'>4</a>
+            </div>
+            <div class="col-2 col-4-small">
+                <a style="width: 100%" class="button color2" onClick='input("5")'>5</a>
+            </div>
+            <div class="col-2 col-4-small">
+                <a style="width: 100%" class="button color1" onClick='input("6")'>6</a>
+            </div>
+            <div class="col-2 col-4-small">
+                <a style="width: 100%" class="button color2" onClick='input("7")'>7</a>
+            </div>
+            <div class="col-2 col-4-small">
+                <a style="width: 100%" class="button color1" onClick='input("8")'>8</a>
+            </div>
+            <div class="col-2 col-4-small">
+                <a style="width: 100%" class="button color2" onClick='input("9")'>9</a>
+            </div>
+            <div class="col-2 col-4-small">
+                <a style="width: 100%" class="button color1" onClick='input("a")'>a</a>
+            </div>
+            <div class="col-2 col-4-small">
+                <a style="width: 100%" class="button color2" onClick='input("b")'>b</a>
+            </div>
+            <div class="col-2 col-4-small">
+                <a style="width: 100%" class="button color1" onClick='input("c")'>c</a>
+            </div>
+            <div class="col-2 col-4-small">
+                <a style="width: 100%" class="button color2" onClick='input("d")'>d</a>
+            </div>
+            <div class="col-2 col-4-small">
+                <a style="width: 100%" class="button color1" onClick='input("e")'>e</a>
+            </div>
+            <div class="col-2 col-4-small">
+                <a style="width: 100%" class="button color2" onClick='input("f")'>f</a>
+            </div>
+            <div class="col-2 col-4-small">
+                <a style="width: 100%" class="button color2" onClick='input("g")'>g</a>
+            </div>
+            <div class="col-2 col-4-small">
+                <a style="width: 100%" class="button color2" onClick='input("h")'>h</a>
+            </div>
+            <div class="col-12" >
+                <br>
+            </div>
+            <div class="col-4" >
+                <a style="width: 100%" class="button color3" onClick="cambiarTeclado(3);">Ocultar</a>
+            </div>
+            <div class="col-4" >
+                <a style="width: 100%" class="button color3" onClick='cambiarTeclado(1)'>{x}</a>
+            </div>
+            <div class="col-4" >
+                <a style="width: 100%" class="button color3" onClick='cambiarTeclado(2)'>øß∂</a>
             </div>
         </div>   
     </div>

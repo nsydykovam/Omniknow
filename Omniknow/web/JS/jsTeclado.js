@@ -50,18 +50,21 @@
                 {
                     document.getElementById("tecladoBase").style.display = 'block'; 
                     document.getElementById("tecladoGriego").style.display = 'none';
+                    document.getElementById("tecladoNumerico").style.display = 'none';
                 }
                 else
                 if (num === 2) //si es 2, viene del uno y cambia al 2
                 {
                    document.getElementById("tecladoBase").style.display = 'none'; 
                    document.getElementById("tecladoGriego").style.display = 'block'; 
+                   document.getElementById("tecladoNumerico").style.display = 'none'; 
                 }
                 else
                 if(num === 3)
                 {
                    document.getElementById("tecladoBase").style.display = 'none'; 
                    document.getElementById("tecladoGriego").style.display = 'none'; 
+                   document.getElementById("tecladoNumerico").style.display = 'none'; 
                    document.getElementById("ponTeclado").style.display = 'block'; 
                    
                 }
@@ -71,6 +74,16 @@
                    document.getElementById("tecladoBase").style.display = 'block'; 
                    document.getElementById("tecladoGriego").style.display = 'none'; 
                    document.getElementById("ponTeclado").style.display = 'none'; 
+                   document.getElementById("tecladoNumerico").style.display = 'none'; 
+                   
+                }
+                else
+                if(num === 5)
+                {
+                   document.getElementById("tecladoBase").style.display = 'none'; 
+                   document.getElementById("tecladoGriego").style.display = 'none'; 
+                   document.getElementById("ponTeclado").style.display = 'none'; 
+                   document.getElementById("tecladoNumerico").style.display = 'block'; 
                    
                 }
             }

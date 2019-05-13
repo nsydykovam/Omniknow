@@ -43,8 +43,8 @@
                                 String claveMa = res.getString("CLAVE_MAESTRA");
                     %>
                     <section>
-                        Usuario: asasas           &nbsp;  <%out.print(usuario);%>  <br>
-                        Clave de acceso:   sasas &nbsp;  <%out.print(claveMa);%><br>
+                        Usuario:           &nbsp;  <%out.print(usuario);%>  <br>
+                        Clave de acceso:   &nbsp;  <%out.print(claveMa);%><br>
                         <hr>
                         <input type="button" class="button" value="Cambiar datos" onClick="poner('cambiosEntr');poner('info')"  >
                     </section>
