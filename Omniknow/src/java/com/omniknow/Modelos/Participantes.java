@@ -6,50 +6,50 @@ package com.omniknow.Modelos;
  */
 public class Participantes {
     public int idParticipante;
-    public int idDatoPersonal;
-    public int idAcceso;
-    public int idEscuela;
+    public DatosPersonales DP;
+    public Accesos A;
+    public Escuelas E;
 
     public Participantes() {
     }
 
-    public Participantes(int idParticipante, int idDatoPersonal, int idAcceso, int idEscuela) {
+    public Participantes(int idParticipante, DatosPersonales DP, Accesos A, Escuelas E) {
         this.idParticipante = idParticipante;
-        this.idDatoPersonal = idDatoPersonal;
-        this.idAcceso = idAcceso;
-        this.idEscuela = idEscuela;
+        this.DP = DP;
+        this.A = A;
+        this.E = E;
     }
 
-    public int getIdParticipant() {
+    public int getIdParticipante() {
         return idParticipante;
     }
 
-    public void setIdParticipant(int idParticipante) {
+    public void setIdParticipante(int idParticipante) {
         this.idParticipante = idParticipante;
     }
 
-    public int getIdDatoPersonal() {
-        return idDatoPersonal;
+    public DatosPersonales getDP() {
+        return DP;
     }
 
-    public void setIdDatoPersonal(int idDatoPersonal) {
-        this.idDatoPersonal = idDatoPersonal;
+    public void setDP(DatosPersonales DP) {
+        this.DP = DP;
     }
 
-    public int getIdAcceso() {
-        return idAcceso;
+    public Accesos getA() {
+        return A;
     }
 
-    public void setIdAcceso(int idAcceso) {
-        this.idAcceso = idAcceso;
+    public void setA(Accesos A) {
+        this.A = A;
     }
 
-    public int getIdEscuela() {
-        return idEscuela;
+    public Escuelas getE() {
+        return E;
     }
 
-    public void setIdEscuela(int idEscuela) {
-        this.idEscuela = idEscuela;
+    public void setE(Escuelas E) {
+        this.E = E;
     }
     
     

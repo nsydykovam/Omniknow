@@ -15,6 +15,15 @@ public class DatosPersonales {
     public DatosPersonales() {
     }
 
+    public DatosPersonales(String Nombre, String ApellidoPaterno, String ApellidoMaterno, String Correo, int Grado) {
+        this.Nombre = Nombre;
+        this.ApellidoPaterno = ApellidoPaterno;
+        this.ApellidoMaterno = ApellidoMaterno;
+        this.Correo = Correo;
+        this.Grado = Grado;
+    }
+    
+
     public DatosPersonales(int idDatoPersonal, String Nombre, String ApellidoPaterno, String ApellidoMaterno, String Correo, int Grado) {
         this.idDatoPersonal = idDatoPersonal;
         this.Nombre = Nombre;

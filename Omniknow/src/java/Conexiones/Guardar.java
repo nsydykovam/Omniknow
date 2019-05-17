@@ -19,7 +19,7 @@ public class Guardar {
 
         c = conexion.getConnection();
         s = c.createStatement();
-
+ 
         //CONEXIÓN A LA BASE - fin
         try {
             s.executeUpdate("USE OMNIKNOW;");

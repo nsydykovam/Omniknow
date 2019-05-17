@@ -9,6 +9,13 @@ public class Accesos {
     public String Usuario;
     public String Contrasena;
 
+    public Accesos(String Usuario, String Contrasena) {
+        this.Usuario = Usuario;
+        this.Contrasena = Contrasena;
+    }
+
+    
+    
     public Accesos(int idAcceso, String Usuario, String Contrasena) {
         this.idAcceso = idAcceso;
         this.Usuario = Usuario;
