@@ -75,7 +75,7 @@
                         <h2></h2><h4></h4>
                         <p><a class="" onclick="poner('registrate')">Regístrate</a></p>
                         <section id="registrate" style="display: none; padding: 20px;">
-                            <form method="post" action="ContrRegistroUsuario">
+                            <form method="post" action="/Omniknow/ContrRegistroUsuario">
                                 <div class="row gtr-uniform">
                                     <div class="col-12">
                                         <input type="text"  id="txtNombrePart" name="nombreParticipante" value="" placeholder="Nombre" />

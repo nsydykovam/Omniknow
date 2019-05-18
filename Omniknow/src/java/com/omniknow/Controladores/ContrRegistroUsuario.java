@@ -46,10 +46,11 @@ public class ContrRegistroUsuario extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet ContrRegistroUsuario</title>");            
+            out.println("<titleRegistro de usuario</title>");            
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet ContrRegistroUsuario at " + request.getContextPath() + "</h1>");
+            out.println("<h2>Hola</h2>");
             /*Extraemos los datos ingresados por el usuario*/
                 /*DatosPersonales*/
             DatosPersonales datoPersonal = new DatosPersonales(request.getParameter("nombreParticipante"),
