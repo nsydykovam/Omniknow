@@ -60,7 +60,7 @@
                                 <a onclick="poner('recuperarContra')" > Recuperar contraseña</a>
                             </div>
                         </form>
-                        <form action="enviarContra.jsp" method="post" >
+                        <form action="/Omniknow/ContrEnviarContra" method="post" >
                             <div class="row" id="recuperarContra" style="display: none">
                                 <div class="col-12">
                                     <input type="text" name="txtUsuario" id="txtUsuario" value="" placeholder="Usuario" />

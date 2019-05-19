@@ -87,7 +87,7 @@ public class ContrRegistroUsuario extends HttpServlet {
                     sentencia = con.getConexion().prepareStatement(CONSULTA_ACCESOS);
                     sentencia.setString(1, participante.getA().getUsuario());
                     rs = sentencia.executeQuery();
-                    //Ahora vemos si no existe ese usuario...
+                    //Ahora vemos si NO existe ese usuario...
                     if(!rs.next()){
                         if (rs != null) if(sentencia != null){rs.close();sentencia.close();}
                         sentencia = con.getConexion().prepareStatement(CONSULTA_ENTRENADORES);

@@ -13,7 +13,7 @@ import java.util.List;
  * @author Perez Rosales
  */
 public class ParticipantesImpl implements IParticipantesDao{
-
+//REGISTRAR NOMBRE_PART, PATER_PART, MATER_PART, GRADO_PART, ESCUELA_PART, CORREO_PART, USUA_PART, CON_PART 
     final String REGISTRAR = "CALL REGISTRAR(?,?,?,?,?,?,?,?);";
     
     @Override
@@ -25,8 +25,8 @@ public class ParticipantesImpl implements IParticipantesDao{
             cs.setString(2, t.getDP().getApellidoPaterno());
             cs.setString(3, t.getDP().getApellidoMaterno());
             cs.setInt(4, t.getDP().getGrado());
-            cs.setString(5, t.getDP().getCorreo());
-            cs.setString(6, t.getE().getNombreEscuela());
+            cs.setString(5, t.getE().getNombreEscuela());
+            cs.setString(6, t.getDP().getCorreo());
             cs.setString(7, t.getA().getUsuario());
             cs.setString(8, t.getA().getContrasena());
             cs.execute();
