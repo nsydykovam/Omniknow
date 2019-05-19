@@ -128,7 +128,7 @@
                         <h2></h2><h4></h4>
                         <p><a class=""  onclick="poner('solicitClav')">Solicitar Clave</a></p>
                         <section id="solicitClav" style="display: none; padding: 20px;">
-                            <form method="post" action="solicitarClave.jsp">
+                            <form method="post" action="/Omniknow/ContrSolicitarClave">
                                 <div class="row gtr-uniform">
                                     <div class="col-12 col-12-xsmall">
                                         <input type="text"  id="txtN" name="txtN" value="" placeholder="Nombre" />

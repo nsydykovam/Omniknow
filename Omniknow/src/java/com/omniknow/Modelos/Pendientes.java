@@ -6,14 +6,18 @@ package com.omniknow.Modelos;
  */
 public class Pendientes {
     public int idPendiente;
-    public int idDatoPersonal;
+    public DatosPersonales datoPersonal;
 
     public Pendientes() {
     }
 
-    public Pendientes(int idPendiente, int idDatoPersonal) {
+    public Pendientes(DatosPersonales datoPersonal) {
+        this.datoPersonal = datoPersonal;
+    }
+
+    public Pendientes(int idPendiente, DatosPersonales datoPersonal) {
         this.idPendiente = idPendiente;
-        this.idDatoPersonal = idDatoPersonal;
+        this.datoPersonal = datoPersonal;
     }
 
     public int getIdPendiente() {
@@ -24,13 +28,13 @@ public class Pendientes {
         this.idPendiente = idPendiente;
     }
 
-    public int getIdDatoPersonal() {
-        return idDatoPersonal;
+    public DatosPersonales getDatoPersonal() {
+        return datoPersonal;
     }
 
-    public void setIdDatoPersonal(int idDatoPersonal) {
-        this.idDatoPersonal = idDatoPersonal;
+    public void setDatoPersonal(DatosPersonales datoPersonal) {
+        this.datoPersonal = datoPersonal;
     }
-    
+
     
 }
