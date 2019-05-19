@@ -34,6 +34,8 @@ public class ParticipantesImpl implements IParticipantesDao{
         }catch(SQLException e){
             System.out.println("Errro: " + e);
             return false;
+        }finally{
+            if(con != null)con.cerrar();
         }
         
     }

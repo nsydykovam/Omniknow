@@ -46,7 +46,7 @@
                     %>
                     <section>
                         <h3>Inicio de sesión</h3>
-                        <form method="post" action="iniciarSesion.jsp" class="row">
+                        <form method="post" action="/Omniknow/ContrIniciarSesion" class="row">
                             <div class="col-12 col-12-xsmall">
                                 <input type="text" name="usuarioInicio" id="txtUsuarioInicio" value="" placeholder="Usuario" />
                             </div>

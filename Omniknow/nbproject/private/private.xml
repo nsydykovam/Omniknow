@@ -4,13 +4,9 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Perez%20Rosales/Desktop/Proyecto-batiz/Omniknow/Omniknow/web/JSP/index.jsp</file>
-            <file>file:/C:/Users/Perez%20Rosales/Desktop/Proyecto-batiz/Omniknow/Omniknow/src/java/com/omniknow/Controladores/ContrRegistroUsuario.java</file>
-            <file>file:/C:/Users/Perez%20Rosales/Desktop/Proyecto-batiz/Omniknow/Omniknow/src/java/com/omniknow/Modelos/Accesos.java</file>
-            <file>file:/C:/Users/Perez%20Rosales/Desktop/Proyecto-batiz/Omniknow/Omniknow/src/java/com/omniknow/Modelos/DatosPersonales.java</file>
-            <file>file:/C:/Users/Perez%20Rosales/Desktop/Proyecto-batiz/Omniknow/Omniknow/web/JSP/registrarUsuario.jsp</file>
+            <file>file:/C:/Users/Perez%20Rosales/Desktop/Proyecto-batiz/Omniknow/Omniknow/web/JSP/iniciarSesion.jsp</file>
             <file>file:/C:/Users/Perez%20Rosales/Desktop/Proyecto-batiz/Omniknow/Omniknow/src/java/Conexiones/Guardar.java</file>
-            <file>file:/C:/Users/Perez%20Rosales/Desktop/Proyecto-batiz/Omniknow/Omniknow/src/java/com/omniknow/Dao/ParticipantesImpl.java</file>
-            <file>file:/C:/Users/Perez%20Rosales/Desktop/Proyecto-batiz/Omniknow/Omniknow/src/java/com/omniknow/Modelos/Participantes.java</file>
+            <file>file:/C:/Users/Perez%20Rosales/Desktop/Proyecto-batiz/Omniknow/Omniknow/src/java/com/omniknow/Controladores/ContrIniciarSesion.java</file>
         </group>
     </open-files>
 </project-private>

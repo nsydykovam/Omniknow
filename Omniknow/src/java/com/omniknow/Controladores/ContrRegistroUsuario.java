@@ -96,6 +96,7 @@ public class ContrRegistroUsuario extends HttpServlet {
                         if (rs.next()) {//Si existe la clave. Registramos al PARTICIPANTE.
                             ParticipantesImpl implParticipante = new ParticipantesImpl();
                             implParticipante.Create(participante);
+                            out.println("<script>alert('Registro exitoso.');window.open('/Omniknow/JSP/index.jsp','_self')</script>");
                         }else{//Si no existe la clave
                             out.println("<script>alert('La clave es incorrecta');history.back()</script>");
                         }
@@ -108,6 +109,7 @@ public class ContrRegistroUsuario extends HttpServlet {
             }finally{
                 try {if(rs != null){rs.close();}if(sentencia != null)sentencia.close();if(con != null) con.cerrar();} catch (Exception e) {}
             }
+            out.println("<a href=/Omniknow/JSP/index.jsp target=\"_self\">Volver</a>");
             out.println("</body>");
             out.println("</html>");
         }

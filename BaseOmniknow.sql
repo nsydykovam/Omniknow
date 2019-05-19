@@ -544,5 +544,3 @@ CREATE TABLE REPORTES
     ID_INGE		INT(10),
     ESTADO		VARCHAR(200)
 );
-
-select * from reportes;
