@@ -43,8 +43,8 @@
                                 String claveMa = res.getString("CLAVE_MAESTRA");
                     %>
                     <section>
-                        Usuario: asasas           &nbsp;  <%out.print(usuario);%>  <br>
-                        Clave de acceso:   sasas &nbsp;  <%out.print(claveMa);%><br>
+                        Usuario:            &nbsp;  <%out.print(usuario);%>  <br>
+                        Clave de acceso:    &nbsp;  <%out.print(claveMa);%><br>
                         <hr>
                         <input type="button" class="button" value="Cambiar datos" onClick="poner('cambiosEntr');poner('info')"  >
                     </section>
@@ -56,7 +56,7 @@
                     %>
                 </article>
                 <article class="post" id="cambiosEntr" style="display: none">
-                    <form action="../JSP/actualizarDatosEntrenador.jsp" method="post">
+                    <form action="/Omniknow/ContrActualizarDatosEntrenador" method="post">
                         <%
                             try {
                                 sta.executeUpdate("USE OMNIKNOW;");

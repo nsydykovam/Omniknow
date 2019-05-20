@@ -6,15 +6,20 @@ package com.omniknow.Modelos;
  */
 public class Entrenadores {
     public int idEntrenador;
-    public int idAcceso;
+    public Accesos acceso;
     public String ClaveMaestra;
 
     public Entrenadores() {
     }
 
-    public Entrenadores(int idEntrenador, int idAcceso, String ClaveMaestra) {
+    public Entrenadores(Accesos acceso, String ClaveMaestra) {
+        this.acceso = acceso;
+        this.ClaveMaestra = ClaveMaestra;
+    }
+
+    public Entrenadores(int idEntrenador, Accesos acceso, String ClaveMaestra) {
         this.idEntrenador = idEntrenador;
-        this.idAcceso = idAcceso;
+        this.acceso = acceso;
         this.ClaveMaestra = ClaveMaestra;
     }
 
@@ -26,12 +31,12 @@ public class Entrenadores {
         this.idEntrenador = idEntrenador;
     }
 
-    public int getIdAcceso() {
-        return idAcceso;
+    public Accesos getAcceso() {
+        return acceso;
     }
 
-    public void setIdAcceso(int idAcceso) {
-        this.idAcceso = idAcceso;
+    public void setAcceso(Accesos acceso) {
+        this.acceso = acceso;
     }
 
     public String getClaveMaestra() {
@@ -41,6 +46,8 @@ public class Entrenadores {
     public void setClaveMaestra(String ClaveMaestra) {
         this.ClaveMaestra = ClaveMaestra;
     }
+    
+    
     
     
 }

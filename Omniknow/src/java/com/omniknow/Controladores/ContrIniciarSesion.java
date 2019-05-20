@@ -6,8 +6,10 @@
 package com.omniknow.Controladores;
 
 import com.omniknow.Conexion.Conexion;
+import com.omniknow.Dao.EntrenadoresImpl;
 import com.omniknow.Modelos.Accesos;
 import com.omniknow.Modelos.DatosPersonales;
+import com.omniknow.Modelos.Entrenadores;
 import com.omniknow.Modelos.Escuelas;
 import com.omniknow.Modelos.Participantes;
 import java.io.IOException;
@@ -80,6 +82,8 @@ public class ContrIniciarSesion extends HttpServlet {
                     sesion.setAttribute("correo", participante.getDP().getCorreo());
                     sesion.setAttribute("usuario", participante.getA().getUsuario());
                     sesion.setAttribute("contra", participante.getA().getContrasena());
+                    /*Podemos agregar los datos como un objeto asi que...*/
+                    sesion.setAttribute("Participante", participante);
                     //Al finalizar volvemos al index
                     out.println("<script>window.open('/Omniknow/JSP/index.jsp','_self')</script>");
                 }else{//Si no lo encuentra, buscar en ACCESOS para ver si es un ENTRENADOR
@@ -93,6 +97,11 @@ public class ContrIniciarSesion extends HttpServlet {
                     if(rs.next()){
                         Accesos acceso3 = new Accesos(rs.getInt("ID_ACCESO"), rs.getString("USUARIO"), rs.getString("CONTRASEÑA"));
                         sesion.setAttribute("grado", "7");
+                        /*En caso de ser un entrendor podemos agregar los datos del entrenador*/
+                        EntrenadoresImpl entImpl = new EntrenadoresImpl();
+                        Entrenadores entre = entImpl.Read(1);
+                        sesion.setAttribute("Entrenador", entre);
+                        /**/
                         out.println("<script>window.open('/Omniknow/JSP/index.jsp','_self')</script>");
                     }else{
                         out.println("<script> alert('Usuario o contraseña incorrectos');window.open('index.jsp','_self')</script>");
